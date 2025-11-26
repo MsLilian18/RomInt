@@ -52,9 +52,9 @@ python romtoint.py
 
 Choose conversion mode:
 
-1 → Roman to Integer
+1 -> Roman to Integer
 
-2 → Integer to Roman
+2 -> Integer to Roman
 
 Enter your value.
 
