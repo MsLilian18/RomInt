@@ -1,8 +1,7 @@
 import re
 
-# -------------------------------
 # Roman to Integer Function
-# -------------------------------
+
 def roman_to_int(s):
     if not s or s.strip() == "":
         return "Error: Input is empty"
@@ -42,9 +41,9 @@ def roman_to_int(s):
     return total
 
 
-# -------------------------------
+
 # Integer to Roman Function
-# -------------------------------
+
 def int_to_roman(num):
     if not isinstance(num, int) or num <= 0 or num > 3999:
         return "Error: Enter an integer between 1 and 3999"
@@ -63,11 +62,10 @@ def int_to_roman(num):
     return result
 
 
-# -------------------------------
 # AUTOMATED TEST CASES
-# -------------------------------
 
-# Roman → Integer Tests
+
+# Roman -> Integer Tests
 assert roman_to_int("I") == 1
 assert roman_to_int("V") == 5
 assert roman_to_int("X") == 10
@@ -87,7 +85,7 @@ assert roman_to_int("VV") == "Error: Invalid repetition of 'V', 'L', or 'D'"
 assert roman_to_int("") == "Error: Input is empty"
 assert roman_to_int("IIII") == "Error: Invalid repetition of a numeral more than 3 times"
 
-# Integer → Roman Tests
+# Integer -> Roman Tests
 assert int_to_roman(1) == "I"
 assert int_to_roman(4) == "IV"
 assert int_to_roman(9) == "IX"
@@ -103,9 +101,8 @@ assert int_to_roman("X") == "Error: Enter an integer between 1 and 3999"
 print("All automated test cases passed! ✅\n")
 
 
-# -------------------------------
 # Yes/No Prompt Helper
-# -------------------------------
+
 def yes_no_prompt(message):
     while True:
         choice = input(message + " (y/n): ").strip().lower()
@@ -115,9 +112,9 @@ def yes_no_prompt(message):
             print("Please enter 'y' or 'n'.")
 
 
-# -------------------------------
+
 # Interactive Mode
-# -------------------------------
+
 if __name__ == "__main__":
     print("🧮 Roman ↔ Integer Converter")
     print("Choose a mode once. Type 'exit' anytime to quit.\n")
