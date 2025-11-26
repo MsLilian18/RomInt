@@ -31,10 +31,7 @@ Friendly error messages guide the user when input is invalid.
 
 Installation
 
-Clone the repository:
-
-git clone https://github.com/your-username/roman-integer-converter.git
-
+Clone the repository: (https://github.com/MsLilian18/RomInt)
 
 Navigate to the project folder:
 
